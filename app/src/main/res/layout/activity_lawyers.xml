@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/logo6"
+    android:background="@drawable/logo8"
     android:fitsSystemWindows="true"
     tools:context=".lawyers.LawyersActivity">
 
@@ -17,16 +17,12 @@
         layout="@layout/content_lawyers"
         android:background="@drawable/logo6" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:paddingRight="50dp"
-        android:tint="@android:color/white"
-        app:fabSize="normal"
-        app:srcCompat="@drawable/ic_account_plus" />
+    <LinearLayout
+        android:layout_width="174dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="231sp"
+        android:layout_marginTop="650sp"
+        android:orientation="vertical" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -38,11 +34,41 @@
         app:fabSize="normal"
         app:srcCompat="@drawable/ic_account_plus" />
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="573sp"
+        android:layout_marginRight="100sp"
+        android:onClick="Atras"
+        android:tint="@android:color/white"
+        app:fabSize="normal"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="98dp"
+        android:layout_height="91dp"
+        android:layout_gravity="right|top"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
     <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="18dp"
-        android:onClick="Registrarse"
-        android:text="@string/Login" />
+        android:id="@+id/button5"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center|right|top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/cerrar"
+        android:onClick="Salir"
+        android:text="@string/Exit"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        app:layout_anchor="@+id/linearLayout2"
+        app:layout_anchorGravity="center" />
 
 </android.support.design.widget.CoordinatorLayout>

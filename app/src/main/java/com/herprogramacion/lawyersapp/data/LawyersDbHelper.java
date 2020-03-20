@@ -47,12 +47,12 @@ public class LawyersDbHelper extends SQLiteOpenHelper {
     }
 
     private void mockData(SQLiteDatabase sqLiteDatabase) {
-        mockLawyer(sqLiteDatabase, new Lawyer("Oya popular en zagnoli 723", "Peteco",
+        mockLawyer(sqLiteDatabase, new Lawyer("Olla popular en zagnoli 723", "Peteco",
                 "300 200 1111", "LLevo 3 kilos de arroz a las 17hs.." +
                 "Colavoro con zapayos orgánicos de mihuerta,alguien puede pasar a buscarlos?.." +
                 "Paso a las 17:30hs pasame dirección.." +
                 "Batlle 925.",
-                "carlos_perez.jpg"));
+                "OllaPopular.jpg"));
         mockLawyer(sqLiteDatabase, new Lawyer("Ofrezco camión 14/07/20 a partir de 20hs", "Publicado por Carlos16",
                 "300 200 2222", "Nos mudamos hoy y sería de gran ayuda un camión.                                             " +
                 "Pasame dirección y ahí estaré" +
