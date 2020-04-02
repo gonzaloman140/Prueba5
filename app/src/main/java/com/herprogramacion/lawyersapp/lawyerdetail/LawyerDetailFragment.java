@@ -141,7 +141,7 @@ public class LawyerDetailFragment extends Fragment {
 
     private void showDeleteError() {
         Toast.makeText(getActivity(),
-                "Error al eliminar abogado", Toast.LENGTH_SHORT).show();
+                "Error al eliminar publicación", Toast.LENGTH_SHORT).show();
     }
 
     private class GetLawyerByIdTask extends AsyncTask<Void, Void, Cursor> {

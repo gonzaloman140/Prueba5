@@ -19,6 +19,16 @@
     <string name="Publicar2"></string>
     <string name="MenuPrincipal"></string>
     <string name="Exit"></string>
+    <string name="Chat">Juan Caicedo</string>
+    <string name="Chat1">Norma Leandro</string>
+    <string name="Chat2">Aparicio Benavides</string>
+    <string name="Chat3">Gabriel Batistuta</string>
+    <string name="Chat4">María Carbajal</string>
+    <string name="Chat5">Lorena Gimenez</string>
+    <string name="ListaContactos"></string>
+    <string name="BotonEnviar">Ingresar</string>
+    <string name="ListaChat"></string>
+    <string name="peteco">peteco</string>
 
 
     <string name="BotonRegistrar">Registrar</string>
@@ -121,4 +131,6 @@
     <string name="field_error">Ingresa un valor</string>
     <string name="action_delete">Eliminar</string>
     <string name="todo">TODO</string>
+    <string name="lista_de_contactos">LISTA DE CONTACTOS</string>
+    <string name="TextView">TextView</string>
 </resources>

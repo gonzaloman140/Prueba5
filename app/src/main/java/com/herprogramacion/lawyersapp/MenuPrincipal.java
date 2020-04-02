@@ -1,27 +1,39 @@
 package com.herprogramacion.lawyersapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.TextView;
 
-import com.herprogramacion.lawyersapp.lawyerdetail.LawyerDetailFragment;
-import com.herprogramacion.lawyersapp.lawyers.AddEditLawyerActivity;
-import com.herprogramacion.lawyersapp.lawyers.AddEditLawyerFragment;
 import com.herprogramacion.lawyersapp.lawyers.LawyersActivity;
 
 public class MenuPrincipal extends AppCompatActivity {
+    private TextView tv1,tv2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
+
+        tv1 =(TextView)findViewById(R.id.textView2);
+
+        String dato =getIntent().getStringExtra("dato");
+        tv1.setText(dato);
     }
 
     public void Publicar(View view) {
 
         Intent Publicar = new Intent(this, PublicarForo.class);
         startActivity(Publicar);
+
+
+    }
+
+    public void emergencia(View view) {
+
+        Intent emergencia = new Intent(this, LlamadasActivity.class);
+        startActivity(emergencia);
 
 
     }
@@ -35,13 +47,28 @@ public class MenuPrincipal extends AppCompatActivity {
 
     }
 
-    public void Publicar2(View view) {
+    public void Tips(View view) {
 
-        Intent Publicar2 = new Intent(this, LawyerDetailFragment.class);
-        startActivity(Publicar2);
+        Intent Tips = new Intent(this, Tips.class);
+        startActivity(Tips);
 
 
     }
+
+
+
+
+
+
+    public void ListaContactos(View view) {
+
+        Intent ListaContactos = new Intent(this, ListaContactos.class);
+        startActivity(ListaContactos);
+
+
+    }
+
+
 
 
 }

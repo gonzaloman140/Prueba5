@@ -2,21 +2,29 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.herprogramacion.lawyersapp">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/kk"
-        android:label="@string/app_name"
+        android:label="Peteco"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".PrecaucionesHogar"></activity>
+        <activity android:name=".Higiene" />
+        <activity android:name=".ContactosImportantes" />
+        <activity android:name=".Mochila" />
+        <activity android:name=".Tips" />
+        <activity android:name=".LlamadasActivity" />
+        <activity android:name=".ListaContactos" />
         <activity android:name=".VerPublicaciones" />
         <activity android:name=".PublicarForo" />
         <activity android:name=".MenuPrincipal" />
         <activity android:name=".Registrarse" />
-        <activity android:name=".Login" />
-        <activity android:name=".prueba" />
         <activity
-            android:name=".lawyers.LawyersActivity"
-            android:label="@string/app_name"
+            android:name=".Login"
+            android:label="SGAD"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +32,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".lawyers.LawyersActivity"
+            android:label="Peteco"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".lawyerdetail.LawyerDetailActivity"
             android:label="@string/title_activity_lawyer_detail"

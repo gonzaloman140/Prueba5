@@ -32,7 +32,8 @@
         android:layout_margin="@dimen/fab_margin"
         android:tint="@android:color/white"
         app:fabSize="normal"
-        app:srcCompat="@drawable/ic_account_plus" />
+        app:srcCompat="@drawable/ic_account_plus"
+        tools:ignore="VectorDrawableCompat" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab2"
@@ -54,21 +55,5 @@
         android:orientation="horizontal">
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="46dp"
-        android:layout_height="46dp"
-        android:layout_gravity="center|right|top"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/cerrar"
-        android:onClick="Salir"
-        android:text="@string/Exit"
-        android:textColor="#FFFFFF"
-        android:textSize="25dp"
-        app:layout_anchor="@+id/linearLayout2"
-        app:layout_anchorGravity="center" />
 
 </android.support.design.widget.CoordinatorLayout>

@@ -8,17 +8,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import static com.herprogramacion.lawyersapp.data.LawyersContract.LawyerEntry;
 
 
-
-
-
-
-
-
-
-
-
-
-
 public class LawyersDbHelper extends SQLiteOpenHelper {
     public static final int DATABASE_VERSION = 1;
     public static final String DATABASE_NAME = "Lawyers.db";
@@ -48,33 +37,120 @@ public class LawyersDbHelper extends SQLiteOpenHelper {
 
     private void mockData(SQLiteDatabase sqLiteDatabase) {
         mockLawyer(sqLiteDatabase, new Lawyer("Olla popular en zagnoli 723", "Peteco",
-                "300 200 1111", "LLevo 3 kilos de arroz a las 17hs.." +
+                "099 203 986", "LLevo 3 kilos de arroz a las 17hs.." +
                 "Colavoro con zapayos orgánicos de mihuerta,alguien puede pasar a buscarlos?.." +
                 "Paso a las 17:30hs pasame dirección.." +
                 "Batlle 925.",
                 "OllaPopular.jpg"));
         mockLawyer(sqLiteDatabase, new Lawyer("Ofrezco camión 14/07/20 a partir de 20hs", "Publicado por Carlos16",
-                "300 200 2222", "Nos mudamos hoy y sería de gran ayuda un camión.                                             " +
+                "099 147 251", "Nos mudamos hoy y sería de gran ayuda un camión.                                             " +
                 "Pasame dirección y ahí estaré" +
                 "Bautista de León 547, Gracias!!",
                 "peteco.jpg"));
-        mockLawyer(sqLiteDatabase, new Lawyer("LLega el rìo 20:30 B. Brum 264", "Estamos a ala espera de ayuda",
-                "300 200 3333", "Puedo pasar a las 19:00hs. por ahì. ",
+        mockLawyer(sqLiteDatabase, new Lawyer("LLega el rìo 20:30 B. Brum 264", "B. Brum 264",
+                "094 126 411", "Puedo pasar a las 19:00hs. por ahì. ",
                 "rio.jpg"));
         mockLawyer(sqLiteDatabase, new Lawyer("Ropa de niños", "2 niñas de 7 y 9 años",
-                "300 200 4444", "Se acepta ropa de abrigo e impermeable, gracias!",
+                "091 342 609", "Se acepta ropa de abrigo e impermeable, gracias!",
                 "ropa.jpg"));
         mockLawyer(sqLiteDatabase, new Lawyer("Se nos rompiò la puerta oribe 365", "Puerta de 2.30m x 75cm",
-                "300 200 5555", "Tenemos herramientas y las bisagras, sòlo precisamos una puerta aunque sea provisoria.",
+                "098 143 555", "Tenemos herramientas y las bisagras, sòlo precisamos una puerta aunque sea provisoria.",
                 "puerta.jpg"));
         mockLawyer(sqLiteDatabase, new Lawyer("Ofrezco camiòn de 17:00hs a 20:00hs", "Camiòn chico",
-                "300 200 6666", "Avisen y me pongo en marcha a partir de las 17;00hs",
+                "098 789 745", "Avisen y me pongo en marcha a partir de las 17;00hs",
                 "camionsito.jpg"));
         mockLawyer(sqLiteDatabase, new Lawyer("Ronda de comida 22:00hs.", "Tartas y empanadas",
-                "300 200 1111", "Vamos a recorrer los sitios màs criticos con comida comunitaria.",
+                "099 627 524", "Vamos a recorrer los sitios màs criticos con comida comunitaria.",
                 "tartas.jpg"));
         mockLawyer(sqLiteDatabase, new Lawyer("Implementos de higiene", "Jabòn lìquido y agua jane",
-                "300 200 1111", "Vamosa estar recorriendo con articulos de higiene el barrio Varona ",
+                "096 199 627", "Vamosa estar recorriendo con articulos de higiene el barrio Varona ",
+                "limpieza.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Olla popular en zagnoli 723", "Peteco",
+                "099 203 986", "LLevo 3 kilos de arroz a las 17hs.." +
+                "Colavoro con zapayos orgánicos de mihuerta,alguien puede pasar a buscarlos?.." +
+                "Paso a las 17:30hs pasame dirección.." +
+                "Batlle 925.",
+                "OllaPopular.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Ofrezco camión 14/07/20 a partir de 20hs", "Publicado por Carlos16",
+                "099 147 251", "Nos mudamos hoy y sería de gran ayuda un camión.                                             " +
+                "Pasame dirección y ahí estaré" +
+                "Bautista de León 547, Gracias!!",
+                "peteco.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("LLega el rìo 20:30 B. Brum 264", "Estamos a ala espera de ayuda, Gracias!",
+                "094 126 411", "Puedo pasar a las 19:00hs. por ahì. ",
+                "rio.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Ropa de niños", "2 niñas de 7 y 9 años",
+                "091 342 609", "Se acepta ropa de abrigo e impermeable, gracias!",
+                "ropa.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Se nos rompiò la puerta oribe 365", "Puerta de 2.30m x 75cm",
+                "098 143 555", "Tenemos herramientas y las bisagras, sòlo precisamos una puerta aunque sea provisoria.",
+                "puerta.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Ofrezco camiòn de 17:00hs a 20:00hs", "Camiòn chico",
+                "098 789 745", "Avisen y me pongo en marcha a partir de las 17;00hs",
+                "camionsito.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Ronda de comida 22:00hs.", "Tartas y empanadas",
+                "099 627 524", "Vamos a recorrer los sitios màs criticos con comida comunitaria.",
+                "tartas.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Implementos de higiene", "Jabòn lìquido y agua jane",
+                "096 199 627", "Vamosa estar recorriendo con articulos de higiene el barrio Varona ",
+                "limpieza.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Olla popular en zagnoli 723", "Peteco",
+                "099 203 986", "LLevo 3 kilos de arroz a las 17hs.." +
+                "Colavoro con zapayos orgánicos de mihuerta,alguien puede pasar a buscarlos?.." +
+                "Paso a las 17:30hs pasame dirección.." +
+                "Batlle 925.",
+                "OllaPopular.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Ofrezco camión 14/07/20 a partir de 20hs", "Publicado por Carlos16",
+                "099 147 251", "Nos mudamos hoy y sería de gran ayuda un camión.                                             " +
+                "Pasame dirección y ahí estaré" +
+                "Bautista de León 547, Gracias!!",
+                "peteco.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("LLega el rìo 20:30 B. Brum 264", "Estamos a ala espera de ayuda, Gracias!",
+                "094 126 411", "Puedo pasar a las 19:00hs. por ahì. ",
+                "rio.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Ropa de niños", "2 niñas de 7 y 9 años",
+                "091 342 609", "Se acepta ropa de abrigo e impermeable, gracias!",
+                "ropa.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Se nos rompiò la puerta oribe 365", "Puerta de 2.30m x 75cm",
+                "098 143 555", "Tenemos herramientas y las bisagras, sòlo precisamos una puerta aunque sea provisoria.",
+                "puerta.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Ofrezco camiòn de 17:00hs a 20:00hs", "Camiòn chico",
+                "098 789 745", "Avisen y me pongo en marcha a partir de las 17;00hs",
+                "camionsito.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Ronda de comida 22:00hs.", "Tartas y empanadas",
+                "099 627 524", "Vamos a recorrer los sitios màs criticos con comida comunitaria.",
+                "tartas.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Implementos de higiene", "Jabòn lìquido y agua jane",
+                "096 199 627", "Vamosa estar recorriendo con articulos de higiene el barrio Varona ",
+                "limpieza.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Olla popular en zagnoli 723", "Peteco",
+                "099 203 986", "LLevo 3 kilos de arroz a las 17hs.." +
+                "Colavoro con zapayos orgánicos de mihuerta,alguien puede pasar a buscarlos?.." +
+                "Paso a las 17:30hs pasame dirección.." +
+                "Batlle 925.",
+                "OllaPopular.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Ofrezco camión 14/07/20 a partir de 20hs", "Publicado por Carlos16",
+                "099 147 251", "Nos mudamos hoy y sería de gran ayuda un camión.                                             " +
+                "Pasame dirección y ahí estaré" +
+                "Bautista de León 547, Gracias!!",
+                "peteco.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("LLega el rìo 20:30 B. Brum 264", "Estamos a ala espera de ayuda, Gracias!",
+                "094 126 411", "Puedo pasar a las 19:00hs. por ahì. ",
+                "rio.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Ropa de niños", "2 niñas de 7 y 9 años",
+                "091 342 609", "Se acepta ropa de abrigo e impermeable, gracias!",
+                "ropa.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Se nos rompiò la puerta oribe 365", "Puerta de 2.30m x 75cm",
+                "098 143 555", "Tenemos herramientas y las bisagras, sòlo precisamos una puerta aunque sea provisoria.",
+                "puerta.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Ofrezco camiòn de 17:00hs a 20:00hs", "Camiòn chico",
+                "098 789 745", "Avisen y me pongo en marcha a partir de las 17;00hs",
+                "camionsito.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Ronda de comida 22:00hs.", "Tartas y empanadas",
+                "099 627 524", "Vamos a recorrer los sitios màs criticos con comida comunitaria.",
+                "tartas.jpg"));
+        mockLawyer(sqLiteDatabase, new Lawyer("Implementos de higiene", "Jabòn lìquido y agua jane",
+                "096 199 627", "Vamosa estar recorriendo con articulos de higiene el barrio Varona ",
                 "limpieza.jpg"));
     }
 

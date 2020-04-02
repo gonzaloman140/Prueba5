@@ -38,6 +38,7 @@ public class AddEditLawyerFragment extends Fragment {
 
     private FloatingActionButton mSaveButton;
     private TextInputEditText mNameField;
+
     private TextInputEditText mPhoneNumberField;
     private TextInputEditText mSpecialtyField;
     private TextInputEditText mBioField;
@@ -73,7 +74,7 @@ public class AddEditLawyerFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_add_edit_lawyer, container, false);
+        View root = inflater.inflate(R.layout.fragment_add_edit_lawyer2, container, false);
 
         // Referencias UI
         mSaveButton = (FloatingActionButton) getActivity().findViewById(R.id.fab);

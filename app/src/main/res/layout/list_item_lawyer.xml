@@ -30,4 +30,5 @@
         android:scaleType="fitXY"
         app:srcCompat="@drawable/ic_account_circle"
         android:contentDescription="@string/todo" />
+
 </RelativeLayout>

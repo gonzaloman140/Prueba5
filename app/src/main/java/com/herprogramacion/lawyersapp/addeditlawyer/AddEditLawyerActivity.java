@@ -14,6 +14,9 @@ public class AddEditLawyerActivity extends AppCompatActivity {
 
     public static final int REQUEST_ADD_LAWYER = 1;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,13 +29,12 @@ public class AddEditLawyerActivity extends AppCompatActivity {
 
         setTitle(lawyerId == null ? "Añadir publicaciôn" : "Editar publicaciôn");
 
-        AddEditLawyerFragment addEditLawyerFragment = (AddEditLawyerFragment)
-                getSupportFragmentManager().findFragmentById(R.id.add_edit_lawyer_container);
-        if (addEditLawyerFragment == null) {
-            addEditLawyerFragment = AddEditLawyerFragment.newInstance(lawyerId);
+        AddEditLawyerFragment addEditLawyerFragment2 = (AddEditLawyerFragment) getSupportFragmentManager().findFragmentById(R.id.add_edit_lawyer_container);
+        if (addEditLawyerFragment2 == null) {
+            addEditLawyerFragment2 = AddEditLawyerFragment.newInstance(lawyerId);
             getSupportFragmentManager()
                     .beginTransaction()
-                    .add(R.id.add_edit_lawyer_container, addEditLawyerFragment)
+                    .add(R.id.add_edit_lawyer_container, addEditLawyerFragment2)
                     .commit();
         }
     }
