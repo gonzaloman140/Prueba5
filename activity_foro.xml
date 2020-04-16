@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo8"
+    android:fitsSystemWindows="true"
+    tools:context=".foro.ForoActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay" />
+
+    <include
+        layout="@layout/content_foro"
+        android:background="@drawable/logo6" />
+
+    <LinearLayout
+        android:layout_width="174dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="231sp"
+        android:layout_marginTop="650sp"
+        android:orientation="vertical" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:tint="@android:color/white"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_account_plus"
+        tools:ignore="VectorDrawableCompat" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="573sp"
+        android:layout_marginRight="100sp"
+        android:onClick="Atras"
+        android:tint="@android:color/white"
+        app:fabSize="normal"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+</android.support.design.widget.CoordinatorLayout>
