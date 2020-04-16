@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.herprogramacion.lawyersapp.lawyers.LawyersActivity;
+import com.herprogramacion.lawyersapp.foro.ForoActivity;
 
 public class VerPublicaciones extends AppCompatActivity {
 
@@ -17,7 +17,7 @@ public class VerPublicaciones extends AppCompatActivity {
 
     public void Login(View view) {
 
-        Intent Login = new Intent(this, LawyersActivity.class);
+        Intent Login = new Intent(this, ForoActivity.class);
         startActivity(Login);
 
     }

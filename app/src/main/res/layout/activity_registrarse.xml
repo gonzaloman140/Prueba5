@@ -41,42 +41,40 @@
     <EditText
         android:id="@+id/editText3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="73dp"
         android:drawableLeft="@drawable/ic_account_circle_black_24dp"
         android:ems="10"
+        android:hint="  Usuario"
         android:inputType="textPersonName"
-        android:paddingTop="30dp"
-        android:text="  Usuario" />
+        android:paddingTop="30dp" />
 
     <EditText
         android:id="@+id/editText4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="73dp"
         android:drawableLeft="@drawable/ic_account_circle_black_24dp"
         android:ems="10"
+        android:hint="  Correo electrónico"
         android:inputType="textPersonName"
-        android:paddingTop="30dp"
-        android:text="  Correo electrónico" />
+        android:paddingTop="30dp" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/editText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="73dp"
         android:drawableLeft="@drawable/ic_lock_black_24dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingTop="30dp"
-        android:text="  Contraseña" />
+        android:hint=" Contraseña"
+        android:inputType="textPassword" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/editText7"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="73dp"
         android:drawableLeft="@drawable/ic_lock_black_24dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingTop="30dp"
-        android:text="  Escribe nuevamente la contraseña" />
+        android:hint=" Escribe nuevamente la contraseña"
+        android:inputType="textPassword" />
 
     <LinearLayout
         android:layout_width="match_parent"

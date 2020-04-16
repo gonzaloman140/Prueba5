@@ -1,23 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PublicarForo">
+    android:background="@drawable/fonfochat2">
+
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="322dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/oval3"
+        android:ems="10"
+        android:hint="Introduzca mensaje"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="81dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/enviar3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText13" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/linearLayout6"
+        android:layout_width="190dp"
+        android:layout_height="652dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="200dp"
-        tools:layout_editor_absoluteY="249dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView2"
+        <Button
+            android:id="@+id/button10"
             android:layout_width="match_parent"
-            android:layout_height="466dp"
-            android:text="PUBLICAR EN EL FORO"
-            android:textSize="100sp" />
+            android:layout_height="89dp"
+            android:background="#00FFFFFF" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:background="@drawable/vinetachatrespuesta"
+            android:text="Que precisan para esta noche?"
+            android:textSize="14dp" />
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="219dp"
+        android:layout_height="652dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/editText13"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button24"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/vinetachat"
+            android:text="Buenas Tardes." />
+
+        <Button
+            android:id="@+id/button25"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:background="#00FFFFFF" />
+
+        <Button
+            android:id="@+id/button26"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:background="@drawable/vinetachat"
+            android:text="Estamos precisando verduras." />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
